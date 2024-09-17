@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #444cf7;
+    --secondary-color: #e5e5f7;
+    --header-bg-color: #ffffff91;
+    --header-border-color: #0d0d0d;
+    --header-shadow-color: #0000008a;
+    --link-color: #2a2a2a;
+    --link-hover-bg-color: #ff8e3c;
+    --link-hover-color: #0d0d0d;
+    --link-shadow-color: #ffae0050;
+    --font-family: Arial, Helvetica, sans-serif;
+    --header-height: header.offsetHeight;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  radial-gradient(#444cf7 1.5px, transparent 1.5px), radial-gradient(#444cf7 1.5px, #e5e5f7 1.5px);
+    background-size: 60px 60px;
+    background-position: 0 0,30px 30px;
+    overflow: hidden;
+    z-index: 2;
+    height: 100%;
+}
+header{
+    display: flex;
+    background-color: #ffffff91;
+    border-bottom: solid 1px #0d0d0d;
+    box-shadow: 0px 0px 10px #0000008a;
+    z-index: 10;
+}
+header img{
+    width: 100px;
+    filter: drop-shadow(0px 0px 5px #0000008a);
+}
+header ul li a{
+    all: unset;
+    color: #2a2a2a;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #ffae0050 0px 0px 5px;
+}
+header ul li a:hover{
+    background-color: #ff8e3c;
+    border-radius: 100px;
+    padding: 5px;
+    color: #0d0d0d;
+    font-weight: bold;
+    transition: 0.2s;
+}
+header ul li a:not(:hover){
+    transition: 0.2s;
+}
+header ul li {
+    all: unset;
+    margin-left: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    width: 100%;
+}
+main{
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+article{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+article h1{
+    font-size: 2em;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+article h1::first-letter{
+    font-size: 2em;
+    color: var(--primary-color);
+}
+article h1 b{
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+article p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.presi{
+    width: 300px;
+}
